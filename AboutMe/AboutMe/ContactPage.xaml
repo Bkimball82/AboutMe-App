@@ -8,8 +8,31 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Contact Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="Black"
+                FontSize="40"
+                FontAttributes="Bold"/>
+
+            <Entry Placeholder="Name" 
+                   x:Name="nameEntry"
+                   Margin="0,20,0,0"/>
+
+            <Entry Placeholder="Email" 
+                   x:Name="emailEntry"
+                   Margin="0,20,0,0"/>
+
+            <Entry Placeholder="Phone Number" 
+                   x:Name="phoneEntry"
+                   Margin="0,20,0,0"/>
+
+            <Entry Placeholder="Question" 
+                   x:Name="questionEntry"
+                   Margin="0,20,0,0"/>
+
+            <Button Text="Submit" TextColor="White" BackgroundColor="Black" Clicked="Button_Clicked" 
+                        HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="200"
+                        Margin="0,20,0,0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
