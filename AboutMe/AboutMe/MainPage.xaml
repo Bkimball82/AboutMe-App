@@ -5,12 +5,31 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AboutMe.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <Frame 
+               CornerRadius="5"
+               HasShadow="True">
+                <StackLayout>
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Brandon Kimball" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+                    <Label Text="Brandon Kimball" 
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand"
+                            FontSize="40"
+                            TextColor="Black"
+                            />
+                </StackLayout>
+            </Frame>
+        
+            <Button FontSize="32" Text="About Me" TextColor="Gray" BackgroundColor="White" Clicked="Button_Clicked" 
+                        ImageSource="abouttwo.png" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="450"
+                        Margin="0,40,0,40"/>
+            <Button FontSize="32" Text="Contact Info" TextColor="Gray" BackgroundColor="White" Clicked="Button_Clicked_1" 
+                        ImageSource="contacttwo.png" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="450"
+                        Margin="0,0,0,40"/>
+            <Button FontSize="32" Text="Skills" TextColor="Gray" BackgroundColor="White" Clicked="Button_Clicked_2" 
+                        ImageSource="skills.png" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="450"/>
+        
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
