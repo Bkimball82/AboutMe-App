@@ -7,9 +7,13 @@
              x:Class="AboutMe.AboutMePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="About Me Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text ="About Me" HorizontalOptions="Center" VerticalOptions="Center" FontSize="40" TextColor="Black"
+                            FontAttributes="Bold"/>
+
+            <Image Source="me.jpg" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" WidthRequest="200"/>
+
+            <Label Text="My name is Brandon Kimball and I am Computer Information Systems major here at Pitt State."
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontSize="28" TextColor="Black" Margin="20" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

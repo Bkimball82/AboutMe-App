@@ -6,10 +6,35 @@
              mc:Ignorable="d"
              x:Class="AboutMe.SkillsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Skills Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text ="Skills" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="40" TextColor="Black"
+                            FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal" Margin="20">
+                    <Image Source="coding.jpg"/>
+                    <Label Text="Coding" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontSize="32" FontAttributes="Bold" 
+                           TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="20">
+                    <Image Source="computer.jpg"/>
+                    <Label Text="Computer Building" HorizontalOptions="Center" VerticalOptions="Center" FontSize="32" FontAttributes="Bold" 
+                           TextColor="Black" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="20">
+                    <Image Source="golf.jpg"/>
+                    <Label Text="Golfing" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontSize="32" FontAttributes="Bold" 
+                           TextColor="Black"/>
+                </StackLayout>
+
+                <Entry x:Name="newSkillEntry" Placeholder="Enter A Recomended New Skill" Margin="20,0,20,0"/>
+                <Button Clicked="Button_Clicked_1" Text="Add Recomended Skill" Margin="20" BackgroundColor="Gray" TextColor="Black" />
+
+                <ListView x:Name="skillsList" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
