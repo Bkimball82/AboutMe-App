@@ -33,7 +33,7 @@
                 <Entry x:Name="newSkillEntry" Placeholder="Enter A Recomended New Skill" Margin="20,0,20,0"/>
                 <Button Clicked="Button_Clicked_1" Text="Add Recomended Skill" Margin="20" BackgroundColor="Gray" TextColor="Black" />
 
-                <ListView x:Name="skillsList" />
+                <ListView x:Name="skillsList" SelectionMode="None"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
